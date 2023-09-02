@@ -1,556 +1,692 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* Fonts Family */
-/* font-family: 'Poppins', sans-serif; */
-
-/* variables */
-
-:root {
-  /* color palate */
-  --primary-color: #7b61ff;
-  --secondary-color: #f6f4ff;
-  --footer-color: #f9f9f9;
-
-  /* font size & weight */
-  --title-font-size: 3.2rem;
-  --small-font-size: 1.3rem;
-  --h2-font-weight: 600;
-
-  /* card-gap */
-  --card--gap: 3.2rem;
-
-  --conatiner--size: 73%;
-}
-
-/* variable Class */
-.section-title {
-  font-size: var(--title-font-size);
-  margin-bottom: 6.4rem;
-  font-weight: 700;
-  margin-top: 12rem;
-}
-
-.container {
-  max-width: 1378px;
-  margin: auto;
-}
-
-.section-button {
-  font-size: 1.6rem;
-  margin-top: 4.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 4px;
-  width: 105px;
-  height: 44px;
-  background: #f6f4ff;
-  border-radius: 12px;
-  cursor: pointer;
-  /* margin-left: -6rem; */
-}
-
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 10px;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 3.2rem;
-  overflow-x: hidden;
-}
-
-ul,
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-
-img {
-  object-fit: cover;
-}
-
-/* main */
-
-.main {
-  background: url(/Imgs/Showcase\ Cover.png) no-repeat center center/cover;
-  min-height: 800px;
-  border-radius: 0 0 50px 50px;
-}
-
-/* headEr */
-.header {
-  color: #fff;
-  max-width: var(--conatiner--size);
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4.8rem;
-  margin-bottom: 160px;
-}
-
-/* NAVIGATIONS */
-.navlists {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.4rem;
-  font-weight: 300;
-}
-.navlists a {
-  opacity: 0.7;
-}
-.navlists a:hover {
-  opacity: 1;
-}
-
-/* USER/LOGIN */
-
-.user-profile {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-}
-
-.user-profile h2 {
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 2.1rem;
-  align-items: flex-end;
-  font-size: 1.4rem;
-}
-.hello {
-  opacity: 0.7;
-}
-
-.profile-pic {
-  width: 48px;
-  height: 48px;
-}
-.profile-pic img {
-  border-radius: 50%;
-  width: 100%;
-}
-
-/* showcase CONTENT */
-.showcase-content {
-  text-align: center;
-  color: #fff;
-  font-size: 25px;
-}
-.showcase-content h1 {
-  margin-bottom: 42px;
-}
-.showcase-content a {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-top: 32px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  background: var(--primary-color);
-  padding: 1.8rem 2.4rem;
-  border-radius: 1.2rem;
-}
-
-.showcase-content a:hover {
-  background: var(--primary-color);
-  opacity: 0.9;
-}
-
-.showcase-search {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  justify-content: space-between;
-  padding: 1.5rem 2rem;
-  padding-right: 1rem;
-  border-radius: 12px;
-  margin-top: 184px;
-}
-
-
-/* Existing styles... */
-
-/* Styling for the Explore button */
-.explore-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: rem;
-  padding-left: 2rem;
-}
-
-.explore-button-text {
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 1.2rem 2.5rem;
-  background-color: var(--primary-color);
-  border-radius: 1.2rem;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-/* Animation on hover */
-.explore-button-text:hover {
-  background-color: #5a3fff;
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-
-.filters {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  flex-shrink: 10px;
-  flex: 10;
-  gap: 10rem;
-}
-
-.filter {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  line-height: 1.6;
-  gap: 1.5rem;
-  border-right: 1px solid rgba(194, 193, 193, 0.1);
-  padding-right: 1.5rem;
-}
-.filter h4 {
-  color: #5b5b5b;
-  font-weight: 300;
-}
-.filter h2 {
-  font-weight: 500;
-}
-.search-button-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 1.5rem;
-  border-radius: 10px;
-}
-.search-button-icon:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-/* destination */
-.destinations-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.6rem;
-}
-
-.destination-card h5 {
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-.destination-card h6 {
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 19.5px;
-}
-
-.destination-card img {
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* HOTELS */
-.hotel-restaurants {
-  transition: 3s;
-}
-
-.title-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hotel-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-  transition: 0.3s;
-}
-
-.hotel-cards {
-  position: relative;
-  border-radius: 12px;
-}
-.hotel-cards img {
-  border-radius: 12px;
-}
-.hotel-cards h5 {
-  font-weight: 500;
-  font-size: 1.6rem;
-}
-
-.hotel-cards h6 {
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 19.5px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.ratings {
-  position: absolute;
-  bottom: 1px;
-  right: 0;
-}
-
-.off {
-  display: none;
-}
-
-.on {
-  display: block;
-}
-
-/* tour/travel */
-.tours-cards h3 {
-  font-size: 2rem;
-}
-.tours-cards {
-  display: flex;
-  gap: 3rem;
-}
-
-.tours-card {
-  display: flex;
-  gap: 3rem;
-  flex: 1;
-}
-
-.tours-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 1.6rem;
-}
-
-.tours-card-content-icons {
-  display: flex;
-  gap: 3rem;
-  margin-top: 6rem;
-}
-.tours-card-content-icons h6 {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 12px;
-  color: #878787;
-}
-.tours-card-contents-text p {
-  margin-top: 2rem;
-}
-
-.tours-card img {
-  border-radius: 12px;
-}
-
-/* activities */
-
-.activities-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.activities-cards img {
-  border-radius: 12px;
-}
-.activities-cards h4 {
-  font-size: 1.6rem;
-}
-
-/* about */
-
-#About {
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
-  align-items: center;
-  gap: 3rem;
-}
-#About h2 {
-  font-size: var(--title-font-size);
-}
-#About p {
-  width: 556px;
-  font-size: 1.6rem;
-  margin-top: 3rem;
-}
-#About .section-button {
-  width: 130px;
-}
-
-
-/* footer */
-footer {
-  background: var(--footer-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin-top: 120px;
-}
-
-.footer-sections {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
-  /* align-items: center;  */
-  justify-content: space-between;
-}
-.footer-sections ul {
-  margin-top: 2rem;
-}
-.footer-section p {
-  font-size: 1.3rem;
-  width: 354px;
-  line-height: 1.9;
-  margin-block: 1rem 2rem;
-  color: #5b5b5b;
-}
-.footer-section a {
-  color: #5b5b5b;
-  font-size: 1.3rem;
-}
-.footer-section h3 {
-  font-size: 1.8rem;
-}
-
-.footer-social-icons {
-  display: flex;
-  gap: 3rem;
-}
-
-.footer-section:last-child {
-  margin-left: auto;
-  margin-right: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.footer-section:last-child form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-.footer-section:last-child label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 1.2;
-  background-color: #fff;
-  color: #5b5b5b;
-  padding-left: 5px;
-}
-
-.footer-section:last-child input {
-  border: none;
-  outline: none;
-  margin-top: 0.5rem;
-  font-size: 1.6rem;
-  color: black;
-  background-color: white;
-}
-
-.footer-section:last-child img {
-  margin-right: 1rem;
-}
-.form-section {
-  display: flex;
-  justify-content: center;
-  line-height: 1.2;
-  background-color: #fff;
-  align-items: center;
-  font-size: 1.4rem;
-  padding: 1rem 2rem;
-  padding-right: 3rem;
-  border-radius: 12px;
-}
-.footer-section:last-child button {
-  outline: none;
-  border: none;
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
-  padding: 2rem;
-  border-radius: 12px;
-  cursor: pointer;
-}
-.footer-section:last-child button img {
-  margin-right: 0;
-}
-
-/* scrollbar */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #242323;
-  /* display: none; */
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 100px;
-  border: 0.5px solid#242323 ;
-  width: 5px;
-
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* */
-.toggleOn
-{
-  display: none;
-}
-
-.toggleClose
-{
-  display: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Agency</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- font awesome link  -->
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!--header section start-->  
+    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>Cholo</span>Ghuri</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Travel Mate</a>
+            <a href="#packages">Event</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!--header section end--> 
+
+    <!-- login form container start -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+
+    </div>
+
+    <!-- login form container end -->
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Begin your Adventures with us</h3>
+            <p>Discover new places with us, who are looking forward to the adventure.</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    
+    <!-- home section end -->
+
+    <!-- book section start -->
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>F</span>
+            <span>I</span>
+            <span>N</span>
+            <span>D</span>
+            <span class="space"></span>
+            <span>T</span>
+            <span>R</span>
+            <span>A</span>
+            <span>V</span>
+            <span>E</span>
+            <span>L</span>
+            <span class="space"></span>
+            <span>M</span>
+            <span>A</span>
+            <span>T</span>
+            <span>E</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/Capture.PNG" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>Location</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>Partner's Age Range</h3>
+                    <select name="gender">
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-50">36-50</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <h3>Partner's Gender</h3>
+                    <select name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                
+                <div class="inputBox">
+                    <h3>From</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>To</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="Find">
+            </form>
+        </div>
+   </section>
+
+    <!-- book section end -->
+
+    <!-- package section start -->
+
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+<!-- Search box section start -->
+<section class="search-box" id="search-box">
+    <form action="#" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search events...">
+        <button type="submit" class="search-button">Search</button>
+    </form>
+</section>
+<!-- Search box section end -->
+
+<!-- Thumbnail boxes section start -->
+<section class="thumbnail-boxes" id="packages">
+    <h1 class="heading">
+        <span>s</span>
+        <span>p</span>
+        <span>c</span>
+        <span>i</span>
+        <span>a</span>
+        <span>l</span>
+        <span>&nbsp;</span>
+        <span>P</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/wedding travel.avif" alt="Wedding Package">
+            <div class="content">
+                <h3>Wedding Package</h3>
+                <p>Make your special day unforgettable with our customized wedding packages.</p>
+                <a href="#book" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/bday party.jpg" alt="Party Package">
+            <div class="content">
+                <h3>Party Package</h3>
+                <p>Celebrate in style with our party packages designed for all occasions.</p>
+                <a href="#book" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/workshop party.webp" alt="Workshop Package">
+            <div class="content">
+                <h3>Workshop Package</h3>
+                <p>Host productive workshops and training sessions with our expertly crafted packages.</p>
+                <a href="#book" class="btn">Learn More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/other packages.jpg" alt="Other Packages">
+            <div class="content">
+                <h3>Other Packages</h3>
+                <p>Explore a variety of packages to suit your unique travel needs and preferences.</p>
+                <a href="#book" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Thumbnail boxes section end -->
+
+
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/sundarban_.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Sundarban</h3>
+                    <p>The Sundarbans is a vast mangrove forest located in Bangladesh, known for its rich biodiversity and being the habitat of the Bengal tiger.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">4000/- <span>4500/-</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/cox's bazar.jpeg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Cox's Bazar</h3>
+                    <p>Cox's Bazar is a coastal town in Bangladesh famous for having the world's longest natural sea beach and for it's beauty.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">5000/- <span>6000/-</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Rangamati.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Rangamati</h3>
+                    <p>
+                        Rangamati is a picturesque district in Bangladesh, characterized by its stunning hill landscapes, lush greenery, and serene Kaptai Lake.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">6500/- <span>6800/- </span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Ratargul-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Ratargul Forest Gump</h3>
+                    <p>Ratargul is a hidden gem in Bangladesh, a freshwater swamp forest located in Gowainghat, Sylhet, known for its crystal-clear water and thriving biodiversity.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">7000/- <span>7300/-</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/saint martin.webp" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Saint Martin</h3>
+                    <p>Saint Martin's Island is a tranquil tropical paradise in the Bay of Bengal, known for its pristine beaches, coral reefs, and as the only coral island in Bangladesh. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">9000/- <span>9500/-</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/sajek.jpeg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Sajek Valley</h3>
+                    <p>Sajek Valley is a breathtaking hill station in Bangladesh, offering stunning panoramic views, lush green landscapes, and a serene escape into nature.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">7500/- <span>8200/-</span></div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- package section end -->
+
+    <!-- services section start -->
+
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Affordable Hotels</h3>
+                <p>Seeking wallet-friendly accommodations? Explore a variety of budget-friendly hotels that offer comfort and convenience, 
+                    ensuring an enjoyable stay without straining your finances. 
+                    Travel affordably without sacrificing comfort.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>Food and Drinks</h3>
+                <p>Indulge in the vibrant culinary tapestry of your travel destination, savoring local flavors and exotic dishes that tantalize your taste buds. 
+                    From street food to fine dining, 
+                    let your journey be a gastronomic adventure of unforgettable meals and refreshing drinks.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Safty Guide</h3>
+                <p>Plan your travels with confidence by following a comprehensive travel safety guide, 
+                    equipping you with valuable tips and information to ensure a secure and worry-free journey wherever you go. 
+                    Prioritize your well-being while exploring the world.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Around the Country</h3>
+                <p>Embark on a thrilling adventure around Bangladesh, where diverse cultures, breathtaking landscapes, 
+                    and remarkable experiences await at every turn. 
+                    It's a journey that broadens horizons and creates lifelong memories, transcending borders and boundaries.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>Faster Travel</h3>
+                <p>In today's fast-paced world, travel has become faster than ever, with high-speed trains, airplanes, 
+                    and technological advancements reducing distances and bringing distant destinations closer together. 
+                    Embrace the rapid pace of modern travel to maximize your exploration opportunities.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventure</h3>
+                <p>Embark on thrilling adventures in Bangladesh, from trekking in the lush hills to navigating its intricate waterways, 
+                    and immerse yourself in the country's natural wonders with an adrenaline-pumping experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section end -->
+
+    <!-- gallery section start -->
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/saint martin.webp" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/ghat.jpeg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Rangamati.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/astogram.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/shatgombuj.jpeg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-6.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/shitakondo.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/sajek.jpeg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/jaflong.jpeg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ea.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- gallery section end -->
+    <!-- review section start -->
+
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+<!-- Search box section start -->
+<section class="search-box" id="search-box">
+    <form action="#" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Search Name...">
+        <button type="submit" class="search-button">Search</button>
+    </form>
+</section>
+<!-- Search box section end -->
+    <!-- Animated "Give Review" Button -->
+<div class="give-review-button-container">
+    <button class="give-review-button">
+        Give Review
+        <span class="button-underline"></span>
+    </button>
+</div>
+
+<!-- Add the caption above the review box -->
+<h2>Review given by users</h2>
+
+<div class="swiper-container review-slider">
+    <div class="swiper-wrapper">
+        <!-- Your existing code for review slides -->
+    </div>
+</div>
+
+           
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/mahir.jpg" alt="">
+                        <h3>Sheikh Mahir</h3>
+                        <p>Fabulous service and great to deal with. Holiday package was excellent value for money and confirmation and reminders for payment and holiday comin up were well organised. 
+                            Thanks, we will definitely use again.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/zamil.jpg" alt="">
+                        <h3>Zobaer Zamil</h3>
+                        <p>I had an incredible trip with the partner I met through this platform. 
+                            Very prompt and trustworthy. Great communication from the moment we booked. When our flights were changed, 
+                            resulting in a day less, it was sorted quickly and effectively with one phone call.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/showrov.jpg" alt="">
+                        <h3>RH Showrov</h3>
+                        <p>Thanks to their assistance, I was able to find afforable loadging in a timely manner. 
+                            Booking travel was easy and staff were very helpful. Great that we could pay off holiday with instalments. So Finally, it was a great journey</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/raiyan.jpg" alt="">
+                        <h3>Saiyem Raiyan</h3>
+                        <p>Consultant tailored our requirements to fit our timeline and budget. We can highly recommend TravelOnline. 
+                            Timely booking and provision of travel documentation, plus follow up to make sure we were happy..</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- review section end -->
+
+    <!-- contact section start -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>C</span>
+            <span>U</span>
+            <span>S</span>
+            <span>T</span>
+            <span>O</span>
+            <span>M</span>
+            <span class="space"></span>
+            <span>E</span>
+            <span>V</span>
+            <span>E</span>
+            <span>N</span>
+            <span>T</span>
+        </h1>
+         <div class="row">
+             <div class="image">
+                 <img src="images/user.PNG" alt="">
+             </div>
+             <form action="">
+                 <div class="inputBox">
+                     <input type="text" placeholder="Name">
+                     <input type="email" placeholder="Email">
+                 </div>
+                 <div class="inputBox">
+                    <input type="address" placeholder="Address">
+                    <input type="phone" placeholder="Phone no.">
+                    <input type="NID No." placeholder="NID no.">
+                    <input type="budget" placeholder="You Budget Range">
+                    <input type="text" placeholder="Place">
+                    <input type="text" placeholder="Food Menu">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="What's you want? Suggestions please..."></textarea>
+                <input type="submit" class="btn" value="Send Message">
+             </form>
+         </div>
+    </section>
+
+    <!-- contact section end -->
+
+    <!-- brand section start -->
+
+    <section class="brand-container">
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- brand section end -->
+
+    <!-- footer section start -->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About</h3>
+                <p>Nestled in South Asia, Bangladesh beckons with its stunning Ganges-Brahmaputra delta, a mosaic of fertile plains and waterways. Dhaka, the bustling capital, showcases a blend of historical treasures like Lalbagh Fort and modern urban life. The world's longest natural sea beach graces Cox's Bazar, while Sylhet's tea-carpeted hills and Rangamati's serene lakes provide picturesque escapes. Sample the flavorful Bengali cuisine, from aromatic biryanis to sweet treats like roshogolla. Immerse yourself in local life by partaking in village tourism, embracing the warm hospitality and traditional crafts. Experience vibrant festivals and respect customs for a truly enriching journey through this diverse nation.</p>  
+            </div>
+            <div class="box">
+                <h3>Travel Place</h3>
+                <a href="#"><i class="fas fa-location-arrow"></i>Cox's bazar</a>
+                <a href="#"><i class="fas fa-location-arrow"></i>Saint Martin</a>
+                <a href="#"><i class="fas fa-location-arrow"></i>Sundarban</a>
+                <a href="#"><i class="fas fa-location-arrow"></i>Ratargul</a>
+                <a href="#"><i class="fas fa-location-arrow"></i>Bandarban</a>
+                <a href="#"><i class="fas fa-location-arrow"></i>Sajek valley</a>
+                <a href="#"><i class="fas fa-location-arrow"></i>More places....</a>
+            </div>
+            <div class="box">
+                <h3>quick link</h3>
+                <a href="#home">Home</a>
+                <a href="#book">Travel Mate</a>
+                <a href="#packages">Event</a>
+                <a href="#review">Sevices</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#review">Review</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-linkedin-in"></i>linkedin</a>
+            </div>
+        </div>
+        <h1 class="credit">Copyright © <span></span> | All rights Reserved
+
+    <!-- footer section end -->
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
