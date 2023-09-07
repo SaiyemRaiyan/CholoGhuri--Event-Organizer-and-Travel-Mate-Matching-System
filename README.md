@@ -3,8 +3,11 @@
 About
 Arrange Workshops, Organize Events, Find Travel Partner, Provide partial support for self event/trip
 
+UI/UX Design:
 
 ![1](https://github.com/SaiyemRaiyan/CholoGhuri--Event-Organizer-and-Travel-Mate-Matching-System/assets/64364859/f36d65fd-a770-454c-ba5b-16838df25265)
+
+![11](https://github.com/SaiyemRaiyan/CholoGhuri--Event-Organizer-and-Travel-Mate-Matching-System/assets/64364859/c34f24b5-3df7-4949-95d6-c63818d01a0e)
 
 ![6](https://github.com/SaiyemRaiyan/CholoGhuri--Event-Organizer-and-Travel-Mate-Matching-System/assets/64364859/29b83fad-7f5d-43e1-82f8-f6d73baeb865) 
 
@@ -13,8 +16,6 @@ Arrange Workshops, Organize Events, Find Travel Partner, Provide partial support
 ![custom](https://github.com/SaiyemRaiyan/CholoGhuri--Event-Organizer-and-Travel-Mate-Matching-System/assets/64364859/0e40427e-9c6b-48a1-94e7-069fd6914ae6) 
 
 ![7](https://github.com/SaiyemRaiyan/CholoGhuri--Event-Organizer-and-Travel-Mate-Matching-System/assets/64364859/fa3c96b2-e28a-4dab-8323-e99f2ab3b786)
-
-![8](https://github.com/SaiyemRaiyan/CholoGhuri--Event-Organizer-and-Travel-Mate-Matching-System/assets/64364859/80b3e8c9-f494-4eba-bcf8-4e827939a056)
 
 ![9](https://github.com/SaiyemRaiyan/CholoGhuri--Event-Organizer-and-Travel-Mate-Matching-System/assets/64364859/dd1f7a11-e138-4e03-9f9e-95c3e8cd9c6e)
 
